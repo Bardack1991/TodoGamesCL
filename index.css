@@ -8,10 +8,101 @@
     align-items: center;
 }
 
+.boton-inicio {
+    text-decoration: none;
+    color: black;
+}
+
 .boton-categoria {
     min-width: 200px;
     margin: 2px;
     text-align: center;
     border: 1px solid grey;
-    color: ;
+    background-color: aqua;
+    text-decoration: none;
+    color: black;
+}
+
+.boton-categoria:hover{
+    min-width: 200px;
+    margin: 2px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: grey;
+    text-decoration: none;
+    color: white;
+}
+
+.boton-nav {
+    min-width: 80px;
+    width: 100px;
+    margin: 2px;
+    text-align: center;
+    border: 1px solid grey;
+    background-color: aqua;
+    text-decoration: none;
+    color: black;
+}
+
+.boton-nav:hover {
+    min-width: 80px;
+    width: 100px;
+    margin: 2px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: grey;
+    text-decoration: none;
+    color: white;
+}
+
+.titulo-juego {
+    text-align: center;
+}
+
+.game-img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.game-img-detail {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.contenedor-juego {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-juegos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contenedor-descripcion {
+    width: 50%;
+    height: 200px;
+    overflow: auto;
+}
+
+.subtitulo-descripcion {
+    width: 50%;
+    text-align: start;
+}
+
+.precio-container {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 5px;
 }
