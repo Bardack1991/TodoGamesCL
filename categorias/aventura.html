@@ -3,25 +3,52 @@
     <head>
         <title>Todo Games</title>
         <link rel="stylesheet" href="../index.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     </head>
     <body>
-        <nav>
-            <a href="../index.html" class="boton-nav">Volver</a>
-            <a class="boton-inicio" href="../index.html">TodoGames CL</a>
-            <a href="#" class="boton-nav">Iniciar Sesión</a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">TodoGames CL</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../formularios/formularioRegistro.html">Registro</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Iniciar Sesión</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
         </nav>
         <h1 class="titulo-categoria">Aventura</h1>
-        <div class="contenedor-juegos">
-            <div class="contenedor-juego">
-                <h4 class="titulo-juego">Minecraft Story Mode</h4>
-                <img class="game-img" src="https://m.media-amazon.com/images/I/71xs-prY+JL._AC_UF1000,1000_QL80_.jpg"/>
-                <a class="boton-categoria" href="../juegos/minecraftStory.html">Ver más</a>
-            </div>
-            <div class="contenedor-juego">
-                <h4 class="titulo-juego">Ori And The Blind Forest</h4>
-                <img class="game-img" src="https://hobbiegames.cl/cdn/shop/products/71JyoiGjklL._SL1355_264c4055-702b-41dc-8f78-aaffaa43bec1_1024x1024.jpg?v=1660764148"/>
-                <a class="boton-categoria" href="../juegos/ori.html">Ver más</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 vstack gap-3 my-3">
+                    <h4 class="titulo-juego">Minecraft Story Mode</h4>
+                    <div class="d-flex justify-content-center">
+                        <img class="game-img" src="https://m.media-amazon.com/images/I/71xs-prY+JL._AC_UF1000,1000_QL80_.jpg"/>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-primary" style="width: 200px;" tabindex="-1" role="button" aria-disabled="true" href="../juegos/blackFlag.html">Ver más</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 vstack gap-3 my-3">
+                    <h4 class="titulo-juego">Ori And The Blind Forest</h4>
+                    <div class="d-flex justify-content-center">
+                        <img class="game-img" src="https://hobbiegames.cl/cdn/shop/products/71JyoiGjklL._SL1355_264c4055-702b-41dc-8f78-aaffaa43bec1_1024x1024.jpg?v=1660764148"/>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-primary" style="width: 200px;" tabindex="-1" role="button" aria-disabled="true" href="../juegos/watchDogs.html">Ver más</a>
+                    </div>
+                </div>
             </div>
         </div>
+        <a href="../index.html" class="btn btn-secondary m-3" style="width: 200px;" tabindex="-1" role="button" aria-disabled="true">Volver</a>
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>
+
